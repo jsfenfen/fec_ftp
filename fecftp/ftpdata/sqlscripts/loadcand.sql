@@ -1,0 +1,1 @@
+copy ftpdata_candidate (cycle, cand_id, cand_name, cand_pty_affiliation, cand_election_year, cand_office_st, cand_office, cand_office_district, cand_ici, cand_status, cand_pcc, cand_st1, cand_st2, cand_city, cand_st, cand_zip) from '/data/12/cn12-fixed.txt' with delimiter as '|' null as '';
