@@ -2,12 +2,14 @@
 
 datadir=../data
 
-for year in  '14' 
+for year in  '12' 
 do
     echo "Getting files for: $year"
 
-    for filename in 'ccl' 'oth' 'pas2' 'cn' 'cm' 'indiv'
+    for filename in 'ccl' 'oth' 'pas2' 'cn' 'cm' 'indiv' 'oppexp'
+    # for filename in ''
     
+
     do
         echo "Getting file: $filename"
         curl -o $datadir/$year/$filename$year.zip ftp://ftp.fec.gov/FEC/20$year/$filename$year.zip
